@@ -7,7 +7,7 @@ import { Building2, Diamond, Waves, Sun, Phone, Mail, MapPin, ArrowRight, Shield
 // Replace placeholders (logoUrl, contact, links) as needed.
 // ---------------------------------------------
 
-const logoUrl = ""; // Optional: paste your logo image URL here
+const logoUrl = "https://github.com/KATONTICORP/oasis-right/blob/main/public/logo.png";
 
 const contact = {
   phone: "+52 1 999 000 0000",
@@ -50,7 +50,7 @@ const projects = [
 const Feature = ({ icon: Icon, title, text }) => (
   <div className="group rounded-2xl bg-white/5 p-6 backdrop-blur border border-white/10 hover:border-white/20 transition">
     <div className="flex items-center gap-3 mb-3">
-      <div className="p-2 rounded-xl bg-gradient-to-br from-yellow-400/30 to-emerald-400/30">
+      <div className="p-2 rounded-xl bg-gradient-to-br from-blue-400/30 to-blue-600/30">
         <Icon className="h-5 w-5" />
       </div>
       <h4 className="font-semibold text-white/90">{title}</h4>
@@ -95,7 +95,7 @@ const ProjectCard = ({ p }) => (
 
 export default function OasisSite() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_#0b1f1a,_#06120f)] text-white">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,#0a1d2c,#050f1a)] text-white">
       {/* NAV */}
       <header className="sticky top-0 z-40 backdrop-blur bg-black/20 border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
@@ -104,7 +104,7 @@ export default function OasisSite() {
               <img src={logoUrl} alt="Oasis Capital Group" className="h-9 w-auto" />
             ) : (
               <div className="flex items-center gap-2">
-                <div className="h-9 w-9 grid place-items-center rounded-xl bg-gradient-to-br from-yellow-400/40 to-emerald-400/30 border border-white/20">
+                <div className="h-9 w-9 grid place-items-center rounded-xl bg-gradient-to-br from-blue-400/40 to-blue-600/30 border border-white/20">
                   <Diamond className="h-5 w-5" />
                 </div>
                 <div className="leading-tight">

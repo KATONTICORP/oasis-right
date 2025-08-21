@@ -7,7 +7,7 @@ import { Building2, Diamond, Waves, Sun, Phone, Mail, MapPin, ArrowRight, Shield
 // Replace placeholders (logoUrl, contact, links) as needed.
 // ---------------------------------------------
 
-const logoUrl = "https://drive.google.com/file/d/1ZdqjvhHNSVuU90GJKefPdYaE4bT1IKlw/view?usp=drive_link";
+const logoUrl = "https://drive.google.com/uc?export=view&id=1ZdqjvhHNSVuU90GJKefPdYaE4bT1IKlw";
 
 const contact = {
   phone: "+52 1 999 000 0000",

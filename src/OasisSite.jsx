@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Building2,
   Diamond,
@@ -40,6 +41,7 @@ const links = {
 
 const projects = [
   {
+    slug: "hama", // ← agregado
     name: "Hama",
     location: "Mahahual, Quintana Roo",
     status: "Pre-sales",
@@ -56,6 +58,7 @@ const projects = [
       "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop",
   },
   {
+    slug: "angelique", // ← agregado
     name: "Angelique",
     location: "Tulum, Quintana Roo",
     status: "Pre-launch",
@@ -119,12 +122,14 @@ const ProjectCard = ({ p }) => (
         ))}
       </div>
       <div className="mt-6 flex items-center justify-between">
-        <a
-          href="#contact"
+        {/* Enlace al detalle del proyecto */}
+        <Link
+          to={`/projects/${p.slug}`}
           className="inline-flex items-center gap-2 text-[#34d3ff] hover:text-sky-100 transition [text-shadow:_0_0_16px_rgba(52,211,255,0.6)]"
         >
           {p.cta} <ArrowRight className="h-4 w-4" />
-        </a>
+        </Link>
+        {/* Este se queda a la sección de contacto */}
         <a
           href="#contact"
           className="text-sm text-sky-200/90 hover:text-sky-100 [text-shadow:_0_0_12px_rgba(52,211,255,0.4)]"
@@ -311,7 +316,7 @@ export default function OasisSite() {
               umbrella.
             </p>
           </div>
-          <a
+        <a
             href="#contact"
             className="hidden sm:inline-flex items-center gap-2 text-sm text-[#34d3ff] hover:text-sky-100 [text-shadow:_0_0_14px_rgba(52,211,255,0.6)]"
           >
